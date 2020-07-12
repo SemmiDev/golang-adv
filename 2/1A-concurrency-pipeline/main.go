@@ -10,15 +10,14 @@ import (
 	"time"
 )
 
-const totalFile = 5000
-const contentLength = 8000
+const totalFile = 100000
+const contentLength = 10000
 
 var tempPath = filepath.Join(os.Getenv("TEMP"), "chapter-A.59-pipeline-temp")
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
-
 func randomString(length int) string {
 	letters := []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 	b := make([]rune, length)
