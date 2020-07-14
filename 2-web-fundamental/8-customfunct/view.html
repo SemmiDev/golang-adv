@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Learning html/template Functions</title>
+</head>
+
+<body>
+
+
+    <ul>
+        <li>penjumlahan : {{unescape "<h2>"}}
+            {{penjumlahan 8 9 8 6 7 8 8}}
+            {{"</h2>" | unescape}}
+        </li>
+
+        <li>rata - rata {{unescape "<!-- this is comment -->"}}
+            {{unescape "<h2>"}}
+            {{avg 8 9 8 6 7 8 8}}
+            {{"</h2>" | unescape}}
+        </li>
+    </ul>
+</body>
+
+</html>

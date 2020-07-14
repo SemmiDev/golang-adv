@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning html template</title>
+</head>
+
+<body>
+    <p>{{html "<h2>hello sam</h2>"}}</p>
+    {{if eq .Name "Bruce Wayne"}}
+
+    <p>I'm the Batman!</p>
+    {{else if ne .Name "Clark Kent"}}
+    <p>I'm neither Batman or Superman</p>
+    {{end}}
+
+    <p>
+        {{.SayHello "Sammidev" "You are our hero!"}}
+    </p>
+
+    <p>
+        {{printf "%s because I'm %s" "You know why?" "Batman!"}}
+    </p>
+
+    <p>
+        Batman have many friends. {{len .Friends}} of them are:
+        {{index .Friends 0}},
+        {{index .Friends 1}}, and
+        {{index .Friends 2}}
+    </p>
+
+
+</body>
+
+</html>

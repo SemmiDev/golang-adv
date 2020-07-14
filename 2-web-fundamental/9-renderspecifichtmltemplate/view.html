@@ -1,0 +1,49 @@
+{{define "root"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {{template "_auah"}}
+</body>
+
+</html>
+{{end}}
+
+{{define "index"}}
+<html>
+
+<head>
+    <title>Learning html/template Functions</title>
+</head>
+
+<body>
+    <h2>Index</h2>
+</body>
+
+</html>
+{{end}}
+
+
+{{define "test"}}
+<html>
+
+<head>
+    <title>Other Template</title>
+</head>
+
+<body>
+    <h2>Test</h2>
+</body>
+
+</html>
+{{end}}
+
+{{define "_auah"}}
+<p>hello root</p>
+{{end}}
